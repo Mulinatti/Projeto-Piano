@@ -13,20 +13,10 @@ for(let i = 0; i < keyList.length; i++) {
     const som = tecla.classList[2];
     const audio = `#som_${som}`;
 
-    tecla.onclick = () => {
+    tecla.onmousedown = () => {
 
         song(audio);
-    }
-
-    tecla.onkeydown = (e) => {
-
-        console.log(e.keyCode);
-
-        if(e.keyCode == 90) {
-
-            console.log('z')
-            tecla.classList.add("active");          
-        }
+        tecla.classList.add("active");   
     }
 
     tecla.onmouseup = () => {
@@ -39,7 +29,3 @@ for(let i = 0; i < keyList.length; i++) {
         tecla.classList.remove("active");
     }
 }
-
-let sum = (a, b) => {return a + b}
-
-console.log(sum(1, 1));
