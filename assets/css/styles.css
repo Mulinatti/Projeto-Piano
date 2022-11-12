@@ -1,0 +1,85 @@
+* {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+
+    background-color: #131313;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+main {
+
+    display: flex;
+}
+
+.piano {
+
+    position: relative;
+    background-color: #000;
+    width: 450px;
+    height: 250px;
+    
+    display: flex;
+    justify-content: space-between;
+}
+
+.tecla {
+
+    width: 60px;
+    background-color: #eeeeee;
+    outline: none;
+    border: none;
+}
+
+.tecla.active {
+
+    background-color: rgb(197, 197, 197);
+}
+
+.preta {
+
+    background-color: #000000;
+    width: 30px;
+    height: 180px;
+    position: absolute;
+}
+
+.preta.active {
+
+    background-color: #2c2c2c;
+}
+
+.dos {
+
+    left: 48px;
+}
+
+.res {
+
+    left: 112px;
+}
+
+.fas {
+
+    left: 242px;
+}
+
+.sols {
+
+    left: 308px;
+}
+
+.las {
+
+    left: 372px;
+}
+
+
+
